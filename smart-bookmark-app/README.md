@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Smart Bookmark App 🔖
 
-## Getting Started
+A modern, real-time bookmark management application built with Next.js and Supabase. Save, organize, and access your favorite links with a beautiful glassmorphism interface.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Google Authentication**: Secure sign-in with Google OAuth.
+- **Real-time Updates**: Bookmarks display instantly across multiple tabs/devices without refreshing.
+- **Optimistic UI**: Immediate feedback when adding or deleting bookmarks.
+- **Responsive Design**: Beautiful glassmorphism aesthetic that works on all devices.
+- **Private Bookmarks**: Your bookmarks are private and linked to your account.
+
+## 🛠️ Tech Stack
+
+- **Frontend**: [Next.js 16](https://nextjs.org/) (App Router), [React](https://react.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Backend & Auth**: [Supabase](https://supabase.com/) (PostgreSQL, Auth, Realtime)
+- **Deployment**: Vercel (recommended)
+
+## 📂 Folder Structure
+
+```
+smart-bookmark-app/
+├── src/
+│   ├── app/
+│   │   ├── dashboard/      # Dashboard page (Protected)
+│   │   │   └── page.js     # Main bookmark management logic
+│   │   ├── globals.css     # Global styles & Tailwind imports
+│   │   ├── layout.js       # Root layout
+│   │   └── page.js         # Sign-in page
+│   └── lib/
+│       └── supabase.js     # Supabase client configuration
+├── public/                 # Static assets
+├── .env.local              # Environment variables
+├── postcss.config.mjs      # PostCSS configuration
+├── tailwind.config.js      # Tailwind configuration
+└── package.json            # Dependencies and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Mujahid087/abstrabait.git
+    cd smart-bookmark-app
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-## Learn More
+3.  **Set up Environment Variables:**
+    Create a `.env.local` file in the root directory and add your Supabase credentials:
+    ```env
+    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5.  **Open in Browser:**
+    Navigate to `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
