@@ -65,6 +65,9 @@ smart-bookmark-app/
 5.  **Open in Browser:**
     Navigate to `http://localhost:3000`.
 
+6. **vercel live link:**
+    `https:smart-bookmark-app-omega-lemon.vercel.app`    
+
 ## 📄 License
 
 This project is licensed under the MIT License.
