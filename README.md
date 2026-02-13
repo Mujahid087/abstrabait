@@ -66,5 +66,5 @@ smart-bookmark-app/
     Navigate to `http://localhost:3000`.
 
 6. **vercel live link:**
-    `https:smart-bookmark-app-omega-lemon.vercel.app`    
+    [vercel link](smart-bookmark-app-omega-lemon.vercel.app)    
 
