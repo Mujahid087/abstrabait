@@ -68,6 +68,3 @@ smart-bookmark-app/
 6. **vercel live link:**
     `https:smart-bookmark-app-omega-lemon.vercel.app`    
 
-## 📄 License
-
-This project is licensed under the MIT License.
